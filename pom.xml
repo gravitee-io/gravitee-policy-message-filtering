@@ -22,7 +22,7 @@
     <parent>
         <groupId>io.gravitee</groupId>
         <artifactId>gravitee-parent</artifactId>
-        <version>20.5</version>
+        <version>21.0.0</version>
     </parent>
 
     <groupId>io.gravitee.policy</groupId>
@@ -34,13 +34,13 @@
 
 
     <properties>
-        <gravitee-bom.version>2.6</gravitee-bom.version>
+        <gravitee-bom.version>4.0.0</gravitee-bom.version>
         <gravitee-apim-gateway-buffer.version>3.21.0-SNAPSHOT</gravitee-apim-gateway-buffer.version>
         <gravitee-apim-gateway-tests-sdk.version>3.21.0-SNAPSHOT</gravitee-apim-gateway-tests-sdk.version>
-        <gravitee-gateway-api.version>2.1.0-alpha.18</gravitee-gateway-api.version>
+        <gravitee-gateway-api.version>2.1.0</gravitee-gateway-api.version>
         <gravitee-policy-api.version>1.11.0</gravitee-policy-api.version>
         <gravitee-common.version>2.0.0</gravitee-common.version>
-        <gravitee-node.version>3.0.0-alpha.2</gravitee-node.version>
+        <gravitee-node.version>3.0.1</gravitee-node.version>
         <gravitee-plugin.version>1.24.1</gravitee-plugin.version>
         <!-- Other dependencies version -->
         <lombok.version>1.18.24</lombok.version>
@@ -48,6 +48,8 @@
         <json-schema-generator-maven-plugin.outputDirectory>${project.build.directory}/schemas</json-schema-generator-maven-plugin.outputDirectory>
         <maven-assembly-plugin.version>2.6</maven-assembly-plugin.version>
         <publish-folder-path>graviteeio-apim/plugins/policies</publish-folder-path>
+        <prettier-maven-plugin.version>0.19</prettier-maven-plugin.version>
+        <prettier-maven-plugin.prettierJavaVersion>2.1.0</prettier-maven-plugin.prettierJavaVersion>
     </properties>
 
     <dependencyManagement>
@@ -211,10 +213,9 @@
             <plugin>
                 <groupId>com.hubspot.maven.plugins</groupId>
                 <artifactId>prettier-maven-plugin</artifactId>
-                <version>0.12</version>
+                <version>${prettier-maven-plugin.version}</version>
                 <configuration>
-                    <nodeVersion>12.13.0</nodeVersion>
-                    <prettierJavaVersion>1.0.1</prettierJavaVersion>
+                    <prettierJavaVersion>${prettier-maven-plugin.prettierJavaVersion}</prettierJavaVersion>
                 </configuration>
                 <executions>
                     <execution>
@@ -224,14 +225,6 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>9</source>
-                    <target>9</target>
-                </configuration>
             </plugin>
         </plugins>
     </build>
