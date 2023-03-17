@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/gravitee-io/gravitee-policy-message-filtering/compare/1.0.0...1.1.0) (2023-03-17)
+
+
+### Bug Fixes
+
+* **deps:** bump dependencies and clean pom.xml ([8e0ee28](https://github.com/gravitee-io/gravitee-policy-message-filtering/commit/8e0ee287aa7f3c72885ac0d4c247758bfa244e4f))
+
+
+### Features
+
+* rename 'jupiter' package in 'reactive' ([6a39d24](https://github.com/gravitee-io/gravitee-policy-message-filtering/commit/6a39d248220fbb82c661dd9f462614c8fea5ed33))
+
 # [1.1.0-alpha.1](https://github.com/gravitee-io/gravitee-policy-message-filtering/compare/1.0.0...1.1.0-alpha.1) (2023-03-13)
 
 
