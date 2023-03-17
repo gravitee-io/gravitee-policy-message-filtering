@@ -23,8 +23,6 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 import io.gravitee.el.TemplateEngine;
-import io.gravitee.gateway.api.Request;
-import io.gravitee.gateway.api.Response;
 import io.gravitee.gateway.api.buffer.Buffer;
 import io.gravitee.gateway.reactive.api.context.MessageExecutionContext;
 import io.gravitee.gateway.reactive.api.context.MessageRequest;
@@ -33,7 +31,6 @@ import io.gravitee.gateway.reactive.api.message.DefaultMessage;
 import io.gravitee.gateway.reactive.api.message.Message;
 import io.gravitee.policy.messagefiltering.configuration.MessageFilteringPolicyConfiguration;
 import io.reactivex.rxjava3.core.Completable;
-import io.reactivex.rxjava3.core.Flowable;
 import io.reactivex.rxjava3.core.Maybe;
 import java.util.function.Function;
 import org.junit.jupiter.api.BeforeEach;
@@ -42,7 +39,6 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.ArgumentCaptor;
 import org.mockito.Captor;
 import org.mockito.Mock;
-import org.mockito.Spy;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 /**

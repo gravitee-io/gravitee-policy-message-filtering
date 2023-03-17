@@ -39,22 +39,18 @@ public class MessageFilteringPolicy implements Policy {
 
     @Override
     public Completable onMessageRequest(MessageExecutionContext ctx) {
-        return Completable.defer(
-            () -> {
-                String computedFilter = computeFilter(ctx);
-                return ctx.request().onMessage(message -> filter(ctx, computedFilter, message));
-            }
-        );
+        return Completable.defer(() -> {
+            String computedFilter = computeFilter(ctx);
+            return ctx.request().onMessage(message -> filter(ctx, computedFilter, message));
+        });
     }
 
     @Override
     public Completable onMessageResponse(MessageExecutionContext ctx) {
-        return Completable.defer(
-            () -> {
-                String computedFilter = computeFilter(ctx);
-                return ctx.response().onMessage(message -> filter(ctx, computedFilter, message));
-            }
-        );
+        return Completable.defer(() -> {
+            String computedFilter = computeFilter(ctx);
+            return ctx.response().onMessage(message -> filter(ctx, computedFilter, message));
+        });
     }
 
     private String computeFilter(final MessageExecutionContext ctx) {
