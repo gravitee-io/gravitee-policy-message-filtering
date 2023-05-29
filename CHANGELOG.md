@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/gravitee-io/gravitee-policy-message-filtering/compare/1.1.0...1.1.1) (2023-05-29)
+
+
+### Bug Fixes
+
+* rename execution phase properties in manifest ([736c4db](https://github.com/gravitee-io/gravitee-policy-message-filtering/commit/736c4db1410a190d07ad5ff0e50334c99a89105c))
+
 # [1.1.0](https://github.com/gravitee-io/gravitee-policy-message-filtering/compare/1.0.0...1.1.0) (2023-03-17)
 
 
