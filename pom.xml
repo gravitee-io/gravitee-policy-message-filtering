@@ -45,7 +45,7 @@
         <gravitee-plugin.version>2.0.1</gravitee-plugin.version>
 
         <!-- Other dependencies version -->
-        <lombok.version>1.18.24</lombok.version>
+        <lombok.version>1.18.28</lombok.version>
         <json-schema-generator-maven-plugin.version>1.1.0</json-schema-generator-maven-plugin.version>
         <json-schema-generator-maven-plugin.outputDirectory>${project.build.directory}/schemas</json-schema-generator-maven-plugin.outputDirectory>
 
