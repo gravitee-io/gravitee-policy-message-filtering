@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/gravitee-io/gravitee-policy-message-filtering/compare/1.1.1...1.1.2) (2023-07-21)
+
+
+### Bug Fixes
+
+* rename `resources/schema` to `resources/schemas` ([dfd9c52](https://github.com/gravitee-io/gravitee-policy-message-filtering/commit/dfd9c523535a68df19b3be6137536f73da588dbd))
+
 ## [1.1.1](https://github.com/gravitee-io/gravitee-policy-message-filtering/compare/1.1.0...1.1.1) (2023-05-29)
 
 
