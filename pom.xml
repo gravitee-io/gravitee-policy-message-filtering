@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-    Copyright (C) 2015 The Gravitee team (http://gravitee.io)
+    Copyright © 2015 The Gravitee team (http://gravitee.io)
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
 
-            http://www.apache.org/licenses/LICENSE-2.0
+        http://www.apache.org/licenses/LICENSE-2.0
 
     Unless required by applicable law or agreed to in writing, software
     distributed under the License is distributed on an "AS IS" BASIS,
@@ -22,7 +22,7 @@
     <parent>
         <groupId>io.gravitee</groupId>
         <artifactId>gravitee-parent</artifactId>
-        <version>21.0.0</version>
+        <version>22.0.2</version>
     </parent>
 
     <groupId>io.gravitee.policy</groupId>
@@ -34,22 +34,27 @@
 
 
     <properties>
-        <gravitee-bom.version>4.0.0</gravitee-bom.version>
-        <gravitee-apim-gateway-buffer.version>3.21.0-SNAPSHOT</gravitee-apim-gateway-buffer.version>
-        <gravitee-apim-gateway-tests-sdk.version>3.21.0-SNAPSHOT</gravitee-apim-gateway-tests-sdk.version>
-        <gravitee-gateway-api.version>2.1.0</gravitee-gateway-api.version>
+        <!-- Gravitee dependencies version -->
+        <gravitee-bom.version>6.0.3</gravitee-bom.version>
+        <gravitee-apim-gateway-buffer.version>4.0.0-SNAPSHOT</gravitee-apim-gateway-buffer.version>
+        <gravitee-apim-gateway-tests-sdk.version>4.0.0-SNAPSHOT</gravitee-apim-gateway-tests-sdk.version>
+        <gravitee-gateway-api.version>3.0.0</gravitee-gateway-api.version>
         <gravitee-policy-api.version>1.11.0</gravitee-policy-api.version>
-        <gravitee-common.version>2.0.0</gravitee-common.version>
-        <gravitee-node.version>3.0.1</gravitee-node.version>
-        <gravitee-plugin.version>1.24.1</gravitee-plugin.version>
+        <gravitee-common.version>2.1.1</gravitee-common.version>
+        <gravitee-node.version>4.0.0</gravitee-node.version>
+        <gravitee-plugin.version>2.0.1</gravitee-plugin.version>
+
         <!-- Other dependencies version -->
         <lombok.version>1.18.24</lombok.version>
         <json-schema-generator-maven-plugin.version>1.1.0</json-schema-generator-maven-plugin.version>
         <json-schema-generator-maven-plugin.outputDirectory>${project.build.directory}/schemas</json-schema-generator-maven-plugin.outputDirectory>
-        <maven-assembly-plugin.version>2.6</maven-assembly-plugin.version>
+
+        <!-- Maven plugins -->
+        <maven-plugin-assembly.version>3.6.0</maven-plugin-assembly.version>
+        <maven-plugin-properties.version>1.1.0</maven-plugin-properties.version>
+
+        <!-- Property used by the publication job in CI-->
         <publish-folder-path>graviteeio-apim/plugins/policies</publish-folder-path>
-        <prettier-maven-plugin.version>0.19</prettier-maven-plugin.version>
-        <prettier-maven-plugin.prettierJavaVersion>2.1.0</prettier-maven-plugin.prettierJavaVersion>
     </properties>
 
     <dependencyManagement>
@@ -174,7 +179,7 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>properties-maven-plugin</artifactId>
-                <version>1.0.0</version>
+                <version>${maven-plugin-properties.version}</version>
                 <executions>
                     <execution>
                         <phase>initialize</phase>
@@ -192,8 +197,9 @@
                 </executions>
             </plugin>
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
-                <version>${maven-assembly-plugin.version}</version>
+                <version>${maven-plugin-assembly.version}</version>
                 <configuration>
                     <appendAssemblyId>false</appendAssemblyId>
                     <descriptors>
@@ -206,22 +212,6 @@
                         <phase>package</phase>
                         <goals>
                             <goal>single</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>com.hubspot.maven.plugins</groupId>
-                <artifactId>prettier-maven-plugin</artifactId>
-                <version>${prettier-maven-plugin.version}</version>
-                <configuration>
-                    <prettierJavaVersion>${prettier-maven-plugin.prettierJavaVersion}</prettierJavaVersion>
-                </configuration>
-                <executions>
-                    <execution>
-                        <phase>validate</phase>
-                        <goals>
-                            <goal>check</goal>
                         </goals>
                     </execution>
                 </executions>
