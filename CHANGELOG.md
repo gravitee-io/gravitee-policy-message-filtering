@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/gravitee-io/gravitee-policy-message-filtering/compare/1.1.2...1.1.3) (2023-07-21)
+
+
+### Bug Fixes
+
+* **deps:** update gravitee-parent & other dependencies ([deb5704](https://github.com/gravitee-io/gravitee-policy-message-filtering/commit/deb570422046c3e5f7885648abebd33ba9d1db93))
+
 ## [1.1.2](https://github.com/gravitee-io/gravitee-policy-message-filtering/compare/1.1.1...1.1.2) (2023-07-21)
 
 
