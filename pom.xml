@@ -42,7 +42,7 @@
         <gravitee-policy-api.version>1.11.0</gravitee-policy-api.version>
         <gravitee-common.version>2.1.1</gravitee-common.version>
         <gravitee-node.version>4.8.2</gravitee-node.version>
-        <gravitee-plugin.version>2.2.0</gravitee-plugin.version>
+        <gravitee-plugin.version>2.2.1</gravitee-plugin.version>
 
         <!-- Other dependencies version -->
         <lombok.version>1.18.30</lombok.version>
