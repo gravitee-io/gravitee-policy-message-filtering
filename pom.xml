@@ -50,7 +50,7 @@
         <json-schema-generator-maven-plugin.outputDirectory>${project.build.directory}/schemas</json-schema-generator-maven-plugin.outputDirectory>
 
         <!-- Maven plugins -->
-        <maven-plugin-assembly.version>3.6.0</maven-plugin-assembly.version>
+        <maven-plugin-assembly.version>3.7.0</maven-plugin-assembly.version>
         <maven-plugin-properties.version>1.2.1</maven-plugin-properties.version>
 
         <!-- Property used by the publication job in CI-->
