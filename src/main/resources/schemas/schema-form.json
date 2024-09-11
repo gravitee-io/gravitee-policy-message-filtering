@@ -5,8 +5,20 @@
     "properties": {
         "filter": {
             "title": "Filter condition",
-            "description": "The condition to apply to filter messages (supports EL).",
+            "description": "The condition to apply to filter messages (supports EL). If the message matches the filtering condition, it is returned, otherwise it is filtered.",
             "type": "string"
+        },
+        "ackFilteredMessage": {
+            "title": "Ack filtered message",
+            "description": "This option allows for acknowledging filtered messages. The acknowledgment will inform the message source that it has been successfully processed.",
+            "type": "boolean",
+            "default": true
+        },
+        "filterMessageOnFilteringError": {
+            "title": "Filter message when an error occurs on applying filter on it",
+            "description": "This option allows for filter message when an error occurs on applying filter on it, i.e. Spel syntaxe error.",
+            "type": "boolean",
+            "default": true
         }
     },
     "required": ["filter"]

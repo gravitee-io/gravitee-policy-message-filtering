@@ -68,11 +68,19 @@ public class MessageFilteringPolicy implements Policy {
     }
 
     private Maybe<Message> filter(final MessageExecutionContext ctx, final String computedFilter, final Message message) {
+        boolean matchesCondition;
         try {
-            boolean filtered = ctx.getTemplateEngine(message).getValue(computedFilter, boolean.class);
-
-            return filtered ? Maybe.just(message) : Maybe.empty();
+            matchesCondition = ctx.getTemplateEngine(message).getValue(computedFilter, boolean.class);
         } catch (Exception ex) {
+            matchesCondition = !configuration.isFilterMessageOnFilteringError();
+        }
+
+        if (matchesCondition) {
+            return Maybe.just(message);
+        } else {
+            if (configuration.isAckFilteredMessage()) {
+                message.ack();
+            }
             return Maybe.empty();
         }
     }

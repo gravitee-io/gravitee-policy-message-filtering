@@ -32,7 +32,17 @@ import lombok.Setter;
 public class MessageFilteringPolicyConfiguration implements PolicyConfiguration {
 
     /**
-     * Filter to apply in order to filter messages
+     * Condition to apply in order to filter messages
      */
     private String filter;
+
+    /**
+     * Option to ack filtered message. The ack will notify the source of the message that it has been handled.
+     */
+    private boolean ackFilteredMessage = true;
+
+    /**
+     * Option to filter message when an error occurs on applying filter on it
+     */
+    private boolean filterMessageOnFilteringError = true;
 }
