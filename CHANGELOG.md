@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/gravitee-io/gravitee-policy-message-filtering/compare/1.1.3...1.1.4) (2024-09-12)
+
+
+### Bug Fixes
+
+* properly ack message when there are filtered to fix APIM-6786 ([461c57a](https://github.com/gravitee-io/gravitee-policy-message-filtering/commit/461c57a14dd301d4068f5a1e5b528ca874f1daf2))
+
 ## [1.1.3](https://github.com/gravitee-io/gravitee-policy-message-filtering/compare/1.1.2...1.1.3) (2023-07-21)
 
 
