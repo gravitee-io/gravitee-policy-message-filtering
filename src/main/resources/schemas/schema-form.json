@@ -6,7 +6,10 @@
         "filter": {
             "title": "Filter condition",
             "description": "The condition to apply to filter messages (supports EL). If the message matches the filtering condition, it is returned, otherwise it is filtered.",
-            "type": "string"
+            "type": "string",
+            "gioConfig": {
+                "el": true
+            }
         },
         "ackFilteredMessage": {
             "title": "Ack filtered message",
