@@ -35,7 +35,7 @@
 
     <properties>
         <!-- Gravitee dependencies version -->
-        <gravitee-bom.version>6.0.61</gravitee-bom.version>
+        <gravitee-bom.version>8.3.35</gravitee-bom.version>
         <gravitee-apim-gateway-buffer.version>4.6.0</gravitee-apim-gateway-buffer.version>
         <gravitee-apim-gateway-tests-sdk.version>4.8.4</gravitee-apim-gateway-tests-sdk.version>
         <gravitee-gateway-api.version>3.0.0</gravitee-gateway-api.version>
