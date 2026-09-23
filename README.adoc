@@ -8,6 +8,16 @@ image:https://circleci.com/gh/gravitee-io/gravitee-policy-message-filtering.svg?
 image:https://f.hubspotusercontent40.net/hubfs/7600448/gravitee-github-button.jpg["Join the community forum", link="https://community.gravitee.io?utm_source=readme", height=20]
 endif::[]
 
+== Compatibility matrix
+
+|===
+| Plugin version | APIM            | Java version
+
+| 2.x            | 4.9.x to latest | 21
+| 1.1.x          | 4.4.x to latest | 17
+| 1.0.x          | 3.20.x to 4.3.x | 11
+|===
+
 == Phases
 
 [cols="4*", options="header"]
