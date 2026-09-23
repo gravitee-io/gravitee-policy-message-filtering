@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/gravitee-io/gravitee-policy-message-filtering/compare/1.2.0...2.0.0) (2026-09-23)
+
+
+* chore(deps)!: move to the gravitee orb 5.16.0 and parent 23.5.0 ([92dbd65](https://github.com/gravitee-io/gravitee-policy-message-filtering/commit/92dbd65a021fb6ea63e4d9e116aeb75b3f17affb))
+
+
+### BREAKING CHANGES
+
+* requires JDK 21
+
+https://gravitee.atlassian.net/browse/BX-403
+
 # [1.2.0](https://github.com/gravitee-io/gravitee-policy-message-filtering/compare/1.1.4...1.2.0) (2026-09-23)
 
 
