@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/gravitee-io/gravitee-policy-message-filtering/compare/1.1.4...1.2.0) (2026-09-23)
+
+
+### Features
+
+* update form to provide el metadata ([fe842fe](https://github.com/gravitee-io/gravitee-policy-message-filtering/commit/fe842fe22dc591b5361059ff4326fdd7b4ca1e89))
+
 ## [1.1.4](https://github.com/gravitee-io/gravitee-policy-message-filtering/compare/1.1.3...1.1.4) (2024-09-12)
 
 
